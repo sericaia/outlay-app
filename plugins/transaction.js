@@ -1,8 +1,8 @@
-const getTransaction = require('../routes/transaction/get');
+const getAll = require('../routes/transaction/getAll');
 
 const plugin = {
   register: (server, options) => {
-    server.route(getTransaction);
+    server.route(getAll);
   },
   name: 'transaction-plugin',
   version: '1.0.0',

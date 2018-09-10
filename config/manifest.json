@@ -1,0 +1,21 @@
+{
+  "server": {
+    "port": 3000
+  },
+  "register": {
+    "plugins": [
+      {
+        "plugin": "./plugins/category",
+        "routes": {
+          "prefix": "/category"
+        }
+      },
+      {
+        "plugin": "./plugins/transaction",
+        "routes": {
+          "prefix": "/transaction"
+        }
+      }
+    ]
+  }
+}

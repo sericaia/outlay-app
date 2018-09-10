@@ -1,0 +1,30 @@
+{
+  "name": "outlay-app",
+  "version": "1.0.0",
+  "description": "the outlay app",
+  "main": "server.js",
+  "dependencies": {
+    "glue": "^5.0.0",
+    "hapi": "^17.5.4",
+    "joi": "^13.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sericaia/outlay-app.git"
+  },
+  "author": "Daniela Matos de Carvalho <alunassertiva@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sericaia/outlay-app/issues"
+  },
+  "homepage": "https://github.com/sericaia/outlay-app#readme"
+}

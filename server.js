@@ -3,7 +3,7 @@ const Glue = require('glue');
 const manifest = require('./config/manifest.json');
 
 const options = {
-  relativeTo: __dirname
+  relativeTo: __dirname,
 };
 
 async function start() {

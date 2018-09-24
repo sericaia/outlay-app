@@ -1,4 +1,4 @@
-const Hapi = require('hapi');
+require('dotenv').config({ path: './config/.env' });
 const Glue = require('glue');
 const manifest = require('./config/manifest.json');
 

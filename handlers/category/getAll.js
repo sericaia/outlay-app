@@ -1,4 +1,4 @@
-const dbConnect = require('../../util/dbConnect');
+const dbConnect = require('../../store/dbConnect');
 
 module.exports = (request, h) => {
   return dbConnect.getAllCategories();

@@ -1,5 +1,5 @@
 const getAll = require('../../../handlers/category/getAll');
-const dbConnect = require('../../../util/dbConnect');
+const dbConnect = require('../../../store/dbConnect');
 
 describe('Category handler', () => {
   it('should get no categories if none was added', () => {

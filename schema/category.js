@@ -5,7 +5,6 @@ const schema = Joi.object({
     .required(),
   name: Joi.string().required(),
   parentCategory: Joi.string().alphanum(),
-  url: Joi.string().uri(),
 });
 
 module.exports = schema;

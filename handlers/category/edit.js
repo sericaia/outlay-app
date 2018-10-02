@@ -1,3 +1,5 @@
+const dbConnect = require('../../store/dbConnect');
+
 module.exports = (request, h) => {
-  return 'TODO';
+  return dbConnect.editCategory(request.payload);
 };

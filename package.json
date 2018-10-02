@@ -9,7 +9,8 @@
     "hapi": "^17.5.4",
     "joi": "^13.6.0",
     "knex": "^0.15.2",
-    "pg": "^7.4.3"
+    "pg": "^7.4.3",
+    "to-snake-case": "^1.0.0"
   },
   "devDependencies": {
     "eslint": "^5.5.0",

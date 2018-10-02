@@ -16,7 +16,7 @@ Transaction
 *  id
 *  name
 *  categories []
-*  payedBy
+*  paidBy
 *  date
 *  value
 *  familyExpense t/f
@@ -29,8 +29,8 @@ View/add/edit transactions
 ### Extra
 
 Dashboard
-*  per month/per category/per payedBy -  sum/avg
-*  total payed by each familyExpense (diff)
+*  per month/per category/per paidBy -  sum/avg
+*  total paid by each familyExpense (diff)
 
 Graphs
 

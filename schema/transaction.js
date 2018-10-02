@@ -5,7 +5,7 @@ const schema = Joi.object({
     .required(),
   name: Joi.string().required(),
   categories: Joi.array(), // not required
-  payedBy: Joi.string().required(),
+  paidBy: Joi.string().required(),
   date: Joi.date().required(),
   value: Joi.number().required(), // EUR
   familyExpense: Joi.boolean().required(), // custom

@@ -1,29 +1,23 @@
-const knex = require('knex')(require('../config/knexfile'));
-const snakeCaseKeys = require('./util/snakeCaseKeys');
+const categoryStore = require('./categoryStore');
+const transactionStore = require('./transactionStore');
 
-const dbConnect = (() => {
-  const TABLE_NAME = 'categories';
+const {
+  getAllCategories,
+  addCategory,
+  editCategory,
+} = categoryStore;
 
-  const getAllCategories = () => knex.select().table(TABLE_NAME);
+const {
+  getAllTransactions,
+  addTransaction,
+  editTransaction,
+} = transactionStore;
 
-  const addCategory = (category) => {
-    const snakeCategory = snakeCaseKeys(category);
-    return knex(TABLE_NAME).insert(snakeCategory);
-  };
-
-  const editCategory = (category) => {
-    const snakeCategory = snakeCaseKeys(category);
-
-    return knex(TABLE_NAME)
-      .where('id', category.id)
-      .update(snakeCategory);
-  };
-
-  return {
-    getAllCategories,
-    addCategory,
-    editCategory,
-  };
-})();
-
-module.exports = dbConnect;
+module.exports = {
+  getAllCategories,
+  addCategory,
+  editCategory,
+  getAllTransactions,
+  addTransaction,
+  editTransaction,
+};
